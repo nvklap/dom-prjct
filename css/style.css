@@ -180,6 +180,7 @@ ul {
   .main {
     display: block;
   }
+
   .btn-more {
     display: block;
     position: absolute;
@@ -192,9 +193,14 @@ ul {
 
   .btn-img {
     height: 60px;
-    transition: transform 200ms;
+    transition: transform 200ms, opacity 200ms;
     width: 60px;
   }
+
+  .btn-more:hover .btn-img {
+    opacity: 0.8;
+  }
+
   .open {
     transform: rotateY(180deg);
   }
@@ -214,5 +220,23 @@ ul {
   .cast-list {
     flex-wrap: wrap;
     gap: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  .wrapper {
+    grid-template-columns: minmax(10px, auto) minmax(250px, 1200px) minmax(
+        10px,
+        auto
+      );
+  }
+
+  .btn-more {
+    top: 12px;
+  }
+
+  .btn-img {
+    height: 35px;
+    width: 35px;
   }
 }
