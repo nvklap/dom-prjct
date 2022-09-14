@@ -125,7 +125,8 @@ ul {
 }
 
 .content-img {
-  max-width: 100%;
+  aspect-ratio: 24 / 11;
+  width: 100%;
 }
 
 .content-title {
