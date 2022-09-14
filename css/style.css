@@ -226,6 +226,7 @@ ul {
   .show {
     left: 0;
     width: 100%;
+    z-index: 1;
   }
 
   .cast-list {
