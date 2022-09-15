@@ -271,8 +271,8 @@ function addNavigation(seriesData) {
   navWrapper.append(nav);
 }
 
-function createHtmlElement(tag, className, text) {
-  const htmlElement = document.createElement(tag);
+function createHtmlElement(tagName, className, text) {
+  const htmlElement = document.createElement(tagName);
   htmlElement.classList.add(className);
   if (text !== undefined) {
     htmlElement.textContent = text;
